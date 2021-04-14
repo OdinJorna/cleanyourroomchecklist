@@ -61,7 +61,7 @@ numberOfTasksCompleted.innerHTML = number;
 
 /* the starting kitty picture */
 let kittyImage = document.getElementById('kitty');
-kittyImage.src = '/img/sadkitty.jpg';
+kittyImage.src = '/cleanyourroomchecklist/img/sadkitty.jpg';
 let kittySays = document.getElementById('kitty-says');
 kittySays.innerHTML = 'Your room is a mess and that makes this kitty sad : ('
 
@@ -72,11 +72,11 @@ function markTaskAsCompleted (e) {
     number++;
       switch (number) { //kitty will be happy if you do enough tasks. Enter here the changes in pictures
         case 2:
-          kittyImage.src = '/img/neutralkitty.jpg';
+          kittyImage.src = '/cleanyourroomchecklist/img/neutralkitty.jpg';
           kittySays.innerHTML = 'You are making progress! Good job!'
           break
         case 5:
-          kittyImage.src = '/img/happykitty.jpg';
+          kittyImage.src = '/cleanyourroomchecklist/img/happykitty.jpg';
           kittySays.innerHTML = 'Yes you did it! I am proud of you.'
           break
       }
